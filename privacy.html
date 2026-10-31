@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta name="description" content="Privacy Policy for SlinkGrid, published by Bashar DigiLab.">
+  <title>SlinkGrid Privacy Policy | Bashar DigiLab</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --page: #f4f7fb;
+      --paper: #ffffff;
+      --ink: #17264a;
+      --body: #40506d;
+      --muted: #73809a;
+      --line: #e4eaf2;
+      --green: #0f9f6e;
+      --green-dark: #087c56;
+      --green-soft: #eaf8f1;
+      --blue: #1479f8;
+      --blue-soft: #eef5ff;
+      --shadow: 0 18px 48px rgba(23, 38, 74, .07);
+      --radius: 22px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+    body {
+      margin: 0;
+      background: var(--page);
+      color: var(--body);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.72;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--green-dark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--blue); }
+    a:focus-visible, button:focus-visible { outline: 3px solid rgba(20, 121, 248, .35); outline-offset: 3px; }
+    .skip-link {
+      position: absolute; left: 16px; top: -60px; z-index: 20;
+      background: var(--ink); color: #fff; padding: 10px 14px; border-radius: 10px;
+    }
+    .skip-link:focus { top: 16px; }
+    .shell { width: min(1120px, calc(100% - 36px)); margin: 42px auto 72px; }
+    .hero {
+      position: relative; overflow: hidden;
+      padding: clamp(30px, 6vw, 66px);
+      border: 1px solid rgba(218, 227, 239, .9);
+      border-radius: 30px;
+      background: linear-gradient(145deg, #fff 0%, #f9fcff 70%, #effaf4 100%);
+      box-shadow: var(--shadow);
+    }
+    .hero::after {
+      content: ""; position: absolute; width: 270px; height: 270px; right: -95px; top: -120px;
+      border: 34px solid rgba(20, 121, 248, .055); border-radius: 50%; pointer-events: none;
+    }
+    .brand-row { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; color: var(--ink); font-weight: 800; letter-spacing: .02em; }
+    .brand-mark { width: 42px; height: 42px; border-radius: 14px; display: grid; place-items: center; color: #fff; background: var(--blue); font-size: 21px; font-weight: 800; box-shadow: 0 8px 18px rgba(20,121,248,.2); }
+    .eyebrow { margin: 0 0 9px; color: var(--green-dark); font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    h1, h2, h3 { color: var(--ink); line-height: 1.25; }
+    h1 { max-width: 720px; margin: 0 0 16px; font-size: clamp(38px, 6vw, 58px); letter-spacing: -.045em; }
+    .hero-copy { max-width: 760px; margin: 0; color: #52617b; font-size: clamp(16px, 2vw, 19px); }
+    .meta-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .meta-pill { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); border-radius: 999px; background: rgba(255,255,255,.84); padding: 8px 13px; color: #52617b; font-size: 13px; }
+    .meta-pill strong { color: var(--ink); font-weight: 700; }
+    .layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 24px; align-items: start; margin-top: 24px; }
+    .toc, .content-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .toc { position: sticky; top: 20px; padding: 23px 18px 18px; }
+    .toc h2 { margin: 0 0 5px; font-size: 16px; }
+    .toc-intro { margin: 0 0 14px; color: var(--muted); font-size: 12px; }
+    .toc ol { list-style: none; counter-reset: section; padding: 0; margin: 0; display: grid; gap: 3px; }
+    .toc li { counter-increment: section; }
+    .toc a { display: flex; gap: 10px; align-items: baseline; padding: 7px 9px; border-radius: 9px; color: #53617b; font-size: 13px; line-height: 1.4; text-decoration: none; }
+    .toc a::before { content: counter(section, decimal-leading-zero); flex: 0 0 22px; color: var(--green); font-size: 11px; font-weight: 800; letter-spacing: .03em; }
+    .toc a:hover, .toc a:focus-visible { background: var(--green-soft); color: var(--green-dark); }
+    .content-card { min-width: 0; padding: clamp(24px, 4vw, 46px); }
+    .notice { display: flex; gap: 13px; padding: 17px 18px; margin: 0 0 30px; background: var(--blue-soft); border: 1px solid #d9e8ff; border-radius: 15px; color: #3e5578; font-size: 14px; }
+    .notice-mark { flex: 0 0 25px; width: 25px; height: 25px; display: grid; place-items: center; border-radius: 50%; background: #dceaff; color: var(--blue); font-weight: 800; }
+    section { padding: 0 0 27px; margin: 0 0 27px; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+    section:last-of-type { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    h2.section-title { margin: 0 0 13px; font-size: clamp(22px, 3vw, 27px); letter-spacing: -.025em; }
+    h3 { margin: 22px 0 8px; font-size: 17px; }
+    p { margin: 0 0 13px; }
+    p:last-child { margin-bottom: 0; }
+    ul { margin: 9px 0 15px; padding-left: 22px; }
+    li { margin: 5px 0; }
+    .data-table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 16px 0 18px; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 14px; }
+    .data-table th, .data-table td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+    .data-table th { width: 31%; color: var(--ink); background: #f7f9fc; font-weight: 700; }
+    .data-table tr:last-child th, .data-table tr:last-child td { border-bottom: 0; }
+    .subtle-box { padding: 16px 18px; margin: 15px 0; border-radius: 14px; border: 1px solid #dcefe6; background: #f4fbf7; }
+    .subtle-box strong { color: var(--ink); }
+    .small { color: var(--muted); font-size: 13px; }
+    .contact-card { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; align-items: center; padding: 18px 20px; margin-top: 18px; border-radius: 16px; background: var(--green-soft); border: 1px solid #d5f0e3; }
+    .contact-card strong { color: var(--ink); display: block; }
+    .contact-card a { font-weight: 700; }
+    .footer { padding: 22px 8px 0; text-align: center; color: var(--muted); font-size: 12px; }
+    .top-button {
+      position: fixed; right: 22px; bottom: 22px; z-index: 10;
+      width: 48px; height: 48px; border: 0; border-radius: 50%; cursor: pointer;
+      color: #fff; background: var(--green); font-size: 23px; line-height: 1;
+      box-shadow: 0 9px 22px rgba(15,159,110,.28); opacity: 0; visibility: hidden;
+      transform: translateY(8px); transition: opacity .2s ease, transform .2s ease, visibility .2s;
+    }
+    .top-button.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    .top-button:hover { background: var(--green-dark); }
+    @media (max-width: 850px) {
+      .shell { width: min(100% - 24px, 720px); margin: 18px auto 48px; }
+      .layout { grid-template-columns: 1fr; gap: 14px; }
+      .toc { position: static; }
+      .toc ol { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2px 7px; }
+    }
+    @media (max-width: 520px) {
+      body { font-size: 15px; }
+      .shell { width: calc(100% - 18px); }
+      .hero { border-radius: 22px; padding: 25px 21px; }
+      .content-card { padding: 23px 19px; }
+      .toc { padding: 18px 14px 14px; }
+      .toc ol { grid-template-columns: 1fr; }
+      .data-table th, .data-table td { display: block; width: 100%; padding: 9px 12px; }
+      .data-table th { border-bottom: 0; padding-bottom: 2px; }
+      .data-table td { padding-top: 3px; }
+      .data-table tr { display: block; border-bottom: 1px solid var(--line); }
+      .data-table tr:last-child { border-bottom: 0; }
+      .top-button { right: 15px; bottom: 15px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+    }
+    @media print {
+      body { background: #fff; color: #222; }
+      .shell { width: 100%; margin: 0; }
+      .hero, .toc, .content-card { box-shadow: none; }
+      .layout { display: block; }
+      .toc, .top-button { display: none !important; }
+      .hero { border: 0; padding: 20px 0; }
+      .content-card { border: 0; padding: 20px 0; }
+      a { color: #1a6a4a; }
+    }
+  </style>
+</head>
+<body id="top">
+  <a class="skip-link" href="#policy-content">Skip to privacy policy</a>
+  <div class="shell">
+    <header class="hero">
+      <div class="brand-row">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SLINKGRID <span style="color:#1479f8">·</span> BASHAR DIGILAB</span>
+      </div>
+      <p class="eyebrow">Privacy and data practices</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-copy">This policy explains what information SlinkGrid stores on your device, what Google services may process when the app displays ads or uses platform diagnostics, and how you can manage your privacy choices.</p>
+      <div class="meta-row">
+        <span class="meta-pill"><strong>Effective date</strong> 30 October 2026</span>
+        <span class="meta-pill"><strong>Publisher</strong> Bashar DigiLab</span>
+        <span class="meta-pill"><strong>Contact</strong> contactme.bashar@gmail.com</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Privacy policy contents">
+        <h2>On this page</h2>
+        <p class="toc-intro">Choose a section to go directly to it.</p>
+        <ol>
+          <li><a href="#who-we-are">Who we are</a></li>
+          <li><a href="#device-data">Information stored on your device</a></li>
+          <li><a href="#ad-data">Advertising and Google AdMob</a></li>
+          <li><a href="#diagnostics">Diagnostics and platform services</a></li>
+          <li><a href="#why-use-data">How information is used</a></li>
+          <li><a href="#sharing">Who receives information</a></li>
+          <li><a href="#ad-choices">Advertising and privacy choices</a></li>
+          <li><a href="#notifications">Notifications</a></li>
+          <li><a href="#retention">Retention and deletion</a></li>
+          <li><a href="#security-transfers">Security and international transfers</a></li>
+          <li><a href="#your-rights">Your privacy rights</a></li>
+          <li><a href="#children">Children's privacy</a></li>
+          <li><a href="#updates-contact">Changes and contact</a></li>
+        </ol>
+      </nav>
+
+      <main class="content-card" id="policy-content">
+        <div class="notice" role="note">
+          <span class="notice-mark" aria-hidden="true">i</span>
+          <div><strong>A quick note about game data.</strong> SlinkGrid stores ordinary puzzle progress on your device. Advertising and certain Google platform or diagnostic components can process separate technical information. Those activities are explained below.</div>
+        </div>
+
+        <section id="who-we-are">
+          <h2 class="section-title">1. Who we are</h2>
+          <p>SlinkGrid is published by <strong>Bashar DigiLab</strong> and operated by <strong>Abul Bashar</strong> (referred to as "Bashar DigiLab", "we", "us" or "our" in this policy).</p>
+          <p>This Privacy Policy applies to the SlinkGrid mobile game and its related in-app privacy features on Android. It explains how information is handled when you install, open or play the game.</p>
+          <p>For privacy questions or requests, contact us at <a href="mailto:contactme.bashar@gmail.com">contactme.bashar@gmail.com</a>. We use this email address as our privacy contact.</p>
+          <p>We do not require you to create a SlinkGrid account to play. In the version described by this policy, campaign progress and game preferences are stored locally rather than in a SlinkGrid player account hosted by us.</p>
+        </section>
+
+        <section id="device-data">
+          <h2 class="section-title">2. Information stored on your device</h2>
+          <p>SlinkGrid saves the information needed to run the game and remember your progress. This information is stored in the app's local database and preferences on your device.</p>
+          <table class="data-table">
+            <tbody>
+              <tr><th scope="row">Game progress</th><td>Completed levels, stars, scores, coins, unlocked content and the current campaign position.</td></tr>
+              <tr><th scope="row">Active puzzle</th><td>The remaining snakes, current board state, hearts remaining and other information needed to resume a puzzle where you left it.</td></tr>
+              <tr><th scope="row">Game preferences</th><td>Sound, music, haptics, display preferences, equipped snake appearance and similar settings.</td></tr>
+              <tr><th scope="row">Daily activity</th><td>Local challenge completion, streak progress and reward state needed to show in-game daily features.</td></tr>
+              <tr><th scope="row">Privacy choices</th><td>Consent and advertising preference status needed to respect the choice you make in the app.</td></tr>
+            </tbody>
+          </table>
+          <p>This local information is used to provide the game, restore your active board and remember your settings. The current version does not send your puzzle save file to a Bashar DigiLab game server.</p>
+          <p>Your device may include app data in its own backup service, depending on your Android backup settings and the app's backup configuration. A device backup is controlled by your operating system and account settings, not by SlinkGrid's game server.</p>
+        </section>
+
+        <section id="ad-data">
+          <h2 class="section-title">3. Advertising and Google AdMob</h2>
+          <p>SlinkGrid may display banner advertisements provided by <strong>Google AdMob</strong>. When the Google Mobile Ads SDK is active, it can automatically collect and share certain information with Google. Google's published SDK disclosure identifies the following categories:</p>
+          <ul>
+            <li><strong>IP address:</strong> may be used to estimate a device's general location, deliver ads, measure advertising and help prevent fraud.</li>
+            <li><strong>App and ad interactions:</strong> information such as app launches, taps, ad impressions and ad views or interactions.</li>
+            <li><strong>Diagnostic information:</strong> technical and performance information, such as app launch time, hangs, crashes or energy usage.</li>
+            <li><strong>Device and advertising identifiers:</strong> identifiers such as the Android Advertising ID or App Set ID, where available and permitted by device settings and SDK configuration.</li>
+          </ul>
+          <p>Google may use this information to deliver and measure advertising, understand ad performance, maintain its services and detect invalid activity. Depending on your location, device settings and privacy choices, ads may be personalised or non-personalised. Turning off personalised advertising does not necessarily prevent all technical information from being processed for ad delivery, measurement, security or fraud prevention.</p>
+          <p>Google explains its handling of information from apps that use its services in its <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use its services</a> notice and its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</p>
+        </section>
+
+        <section id="diagnostics">
+          <h2 class="section-title">4. Diagnostics and platform services</h2>
+          <p>SlinkGrid uses Google Play Services for supported Android platform functions. The app may also use Google diagnostic or crash-reporting components included in the installed version to identify technical problems and improve stability.</p>
+          <p>Where a diagnostic component is enabled, it may process information such as app version, device model, operating system version, crash details, timestamps, performance measurements and technical identifiers. This information is used to investigate crashes, diagnose faults, protect the service and improve app reliability.</p>
+          <p>Google Play Services and Google diagnostic products are not used by this policy as a blanket description of every Google product. The exact products and data categories must match the SDKs included in the version you install. Google explains its data handling in the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</p>
+        </section>
+
+        <section id="why-use-data">
+          <h2 class="section-title">5. How information is used</h2>
+          <p>Information handled by SlinkGrid and its disclosed Google services is used for the following purposes:</p>
+          <ul>
+            <li>Save and restore your level progress, current puzzle and settings.</li>
+            <li>Provide daily challenges, streaks, rewards and local reminders that you have enabled.</li>
+            <li>Display, measure and maintain banner advertising through Google AdMob.</li>
+            <li>Respect privacy and advertising choices where the app or applicable law requires them.</li>
+            <li>Detect invalid advertising activity, protect the app and investigate technical problems.</li>
+            <li>Meet legal requirements and respond to privacy requests.</li>
+          </ul>
+          <p>Where a privacy law requires a legal basis, the basis depends on the activity and your location. Local storage needed to provide the game is used to perform the service you request. Advertising that requires consent is enabled only in accordance with the consent choices and rules that apply to you. Security, fraud prevention and service diagnostics may be handled on the basis permitted by applicable law, including legitimate interests where that basis is available and appropriate.</p>
+          <p>We do not use puzzle progress to make decisions that produce legal effects or similarly significant effects about you.</p>
+        </section>
+
+        <section id="sharing">
+          <h2 class="section-title">6. Who receives information</h2>
+          <p>We do not sell your personal information to another company in exchange for payment. The current service integrations described in this policy are limited to Google services used for advertising, Android platform functionality and diagnostics.</p>
+          <ul>
+            <li><strong>Google AdMob:</strong> provides banner ads and related ad measurement, security and fraud prevention.</li>
+            <li><strong>Google Play Services:</strong> supports Android platform functions used by the app.</li>
+            <li><strong>Google diagnostic or crash-reporting components:</strong> receive technical information when those components are present and enabled in the app build.</li>
+          </ul>
+          <p>Google may process information under its own privacy terms and, depending on the particular activity, may act in a role different from ours. Review Google's notices for details about its purposes, controls and retention practices.</p>
+          <p>We do not intend to add another advertising network or mediation provider without updating the app's disclosures and this policy. If the app's SDK configuration changes, the policy and Google Play Data safety declarations must be reviewed and updated before release.</p>
+          <p>We may also disclose information if required by law, to protect legal rights or safety, or as part of a business transfer where permitted by law. We do not operate a SlinkGrid social profile system or sell player lists.</p>
+        </section>
+
+        <section id="ad-choices">
+          <h2 class="section-title">7. Advertising and privacy choices</h2>
+          <p>Where required, SlinkGrid presents a privacy or consent message so you can review the available advertising choices before the relevant advertising processing takes place. Depending on your location and the consent configuration in the app, the message may let you accept, reject or customise advertising purposes and vendors.</p>
+          <p>You can revisit available choices through <strong>Settings &gt; Privacy Preferences</strong> in SlinkGrid. The options shown in the app are the controls that apply to the current release and your region. You can also manage your Android Advertising ID and device-level ad settings through Android settings, where available.</p>
+          <p>Google's User Messaging Platform (UMP) can be used to request and manage consent information for Google ads. If it is included in the app build, SlinkGrid uses the UMP flow and its configured messages to present the choices required for the regions in which the app is available. Google describes the process in its <a href="https://developers.google.com/admob/android/privacy" target="_blank" rel="noopener noreferrer">AdMob privacy and consent documentation</a>.</p>
+          <p>Withdrawing consent does not make earlier processing unlawful, and it may not stop processing that has a separate lawful basis. It also does not necessarily remove technical processing needed to deliver a non-personalised ad or prevent fraud.</p>
+          <div class="subtle-box"><strong>About vendor and purpose lists</strong><br>Where the in-app consent message displays vendor names or advertising purposes under an applicable consent framework, that live message provides the current configuration. We do not represent that a particular IAB Transparency and Consent Framework version or purpose configuration is in use unless that framework is actually enabled in the released app.</div>
+        </section>
+
+        <section id="notifications">
+          <h2 class="section-title">8. Notifications</h2>
+          <p>SlinkGrid may ask for permission to send notifications about daily challenges, streaks or rewards. You can decline permission or turn notifications off later in your Android system settings.</p>
+          <p>For local reminders, the app schedules notification content and timing on your device. The reminder schedule is used to provide the feature and does not, by itself, require us to receive your notification history or precise location.</p>
+          <p>If a future version introduces remote push notifications or a new messaging service, we will update this policy to identify the service, the information it processes and the available controls.</p>
+        </section>
+
+        <section id="retention">
+          <h2 class="section-title">9. Retention and deletion</h2>
+          <p><strong>Local game data:</strong> remains on your device until you remove it, clear the app's storage or uninstall SlinkGrid. Some information may remain in a device backup if your Android backup settings include app data.</p>
+          <p><strong>Privacy preferences:</strong> are retained locally for as long as needed to remember and apply your choices. If a consent record is also retained by a consent or advertising service, that service's retention rules may apply.</p>
+          <p><strong>Support messages:</strong> if you email us, we keep the message and information you choose to include for as long as reasonably necessary to respond, handle follow-up and meet applicable legal obligations.</p>
+          <p><strong>Google advertising and diagnostic information:</strong> is handled under Google's applicable retention and deletion practices. Uninstalling SlinkGrid does not necessarily delete information already received by Google. Use Google's privacy controls or contact Google where its services provide the relevant request route.</p>
+          <p>To remove locally stored game progress, use Android's app storage controls to clear SlinkGrid data or uninstall the app. This removes local progress from the device and may not remove information held by Google or included in an independent device backup.</p>
+        </section>
+
+        <section id="security-transfers">
+          <h2 class="section-title">10. Security and international transfers</h2>
+          <p>We take reasonable steps to protect information handled by SlinkGrid. Local game data is stored within the app's data area on your device and is subject to the security features and access controls provided by Android. Google states that data collected by its Google Mobile Ads SDK is encrypted in transit using Transport Layer Security (TLS).</p>
+          <p>No app, device or internet transmission can be guaranteed to be completely secure. Keep your device's operating system up to date and use the security controls available on your device.</p>
+          <p>Google operates services in multiple countries. Information processed by Google may therefore be transferred to or accessed from countries other than the country where you live. Google describes the transfer mechanisms and safeguards that apply to its services in its privacy and legal documentation. We do not independently control Google's international infrastructure.</p>
+        </section>
+
+        <section id="your-rights">
+          <h2 class="section-title">11. Your privacy rights</h2>
+          <p>Your rights depend on where you live and which privacy laws apply. You may contact us at <a href="mailto:contactme.bashar@gmail.com">contactme.bashar@gmail.com</a> to ask about information that we hold directly. We may need to verify your request before acting. We will respond within the time required by applicable law.</p>
+          <h3>European Economic Area and United Kingdom</h3>
+          <p>Where the GDPR or UK GDPR applies, you may have rights to request access to your personal data, correct inaccurate information, request erasure, restrict or object to certain processing, and receive certain information in a portable format. Where processing is based on consent, you can withdraw that consent. You may also complain to your local data protection authority. In the UK, this is the Information Commissioner's Office (ICO).</p>
+          <h3>United States, including California</h3>
+          <p>Depending on your state and whether the relevant law applies to our activities, you may have rights to know or access personal information, request deletion or correction, obtain a portable copy, and opt out of certain sale, sharing or targeted advertising. California residents may have additional rights under the CCPA as amended by the CPRA, including rights relating to sensitive personal information and certain automated processing. We do not knowingly sell personal information for money. However, some personalised advertising activity may be treated as "sharing" or targeted advertising under applicable state law. Use the in-app privacy preferences where available or email us to make a request.</p>
+          <h3>India</h3>
+          <p>We will handle personal data in accordance with Indian law as it applies to the service. India's Digital Personal Data Protection Act, 2023 and the Digital Personal Data Protection Rules, 2025 have notified commencement in stages. As of the effective date of this policy, the Government's 13 November 2025 notification schedules many substantive processing duties and data principal rights to take effect 18 months after publication, on 13 May 2027. Rights and obligations that are already in force, and any other applicable Indian legal requirements, continue to apply. We will update this notice as the remaining provisions take effect.</p>
+          <h3>Canada</h3>
+          <p>Where Canadian privacy laws such as PIPEDA or applicable provincial laws apply, you may have rights to request access to personal information we hold, ask for corrections and raise a complaint with the relevant privacy regulator.</p>
+          <h3>Brazil</h3>
+          <p>Where Brazil's LGPD applies, you may have rights to confirm processing, access and correct personal data, request anonymisation, blocking or deletion where available, request portability where applicable, and withdraw consent. You may also contact the Brazilian National Data Protection Authority (ANPD).</p>
+          <h3>Other locations</h3>
+          <p>People in other countries may have similar rights under local privacy laws. We will consider and respond to requests in line with the requirements that apply to the request.</p>
+          <p class="small">Some rights are subject to legal exceptions. The availability of a right does not mean that every request can always be granted, particularly where information is held by Google rather than by Bashar DigiLab.</p>
+        </section>
+
+        <section id="children">
+          <h2 class="section-title">12. Children's privacy</h2>
+          <p>SlinkGrid is designed as a general-audience puzzle game and is not intended to be a service directed specifically at children under 13. We do not knowingly ask children to submit personal information directly to Bashar DigiLab.</p>
+          <p>Advertising services may process device or advertising information as described in this policy. The app's audience settings, advertising configuration and consent flow must be configured to match its actual age rating, target audience and the laws that apply in each market.</p>
+          <p>If you are a parent or guardian and believe a child has sent personal information to us, contact <a href="mailto:contactme.bashar@gmail.com">contactme.bashar@gmail.com</a>. We will review the request and take appropriate steps where required.</p>
+        </section>
+
+        <section id="updates-contact">
+          <h2 class="section-title">13. Changes and contact</h2>
+          <p>We may update this Privacy Policy when SlinkGrid changes, when we add or remove a service provider, or when privacy requirements change. The updated version will be published at this page with a revised effective date. If a change materially affects the way information is handled, we will provide an additional notice in the app where appropriate.</p>
+          <p>Please review this page from time to time, especially after installing a major app update.</p>
+          <div class="contact-card">
+            <div><strong>Privacy questions or requests</strong><span class="small">Bashar DigiLab, operated by Abul Bashar</span></div>
+            <a href="mailto:contactme.bashar@gmail.com">contactme.bashar@gmail.com</a>
+          </div>
+          <h3>Additional information</h3>
+          <ul>
+            <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+            <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from apps that use its services</a></li>
+            <li><a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" target="_blank" rel="noopener noreferrer">Google Mobile Ads SDK data disclosure for Google Play</a></li>
+            <li><a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">UK Information Commissioner's Office</a></li>
+            <li><a href="https://cppa.ca.gov/" target="_blank" rel="noopener noreferrer">California Privacy Protection Agency</a></li>
+            <li><a href="https://www.meity.gov.in/" target="_blank" rel="noopener noreferrer">India Ministry of Electronics and Information Technology</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">SlinkGrid Privacy Policy · Bashar DigiLab · Effective 30 October 2026</footer>
+  </div>
+  <button class="top-button" id="backToTop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+  <script>
+    (function () {
+      const button = document.getElementById('backToTop');
+      const updateButton = function () {
+        button.classList.toggle('visible', window.scrollY > 420);
+      };
+      window.addEventListener('scroll', updateButton, { passive: true });
+      button.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      });
+      updateButton();
+    }());
+  </script>
+</body>
+</html>
